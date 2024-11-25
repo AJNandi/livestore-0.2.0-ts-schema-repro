@@ -5,7 +5,6 @@ import { nanoid } from "nanoid"
 import { Button } from "../../components/ui/button"
 import { Card, CardContent } from "../../components/ui/card"
 import { ScrollArea } from "../../components/ui/scroll-area"
-import { queryDb } from "@livestore/livestore"
 
 export function WorkspaceSelector() {
   const { store } = useStore()
