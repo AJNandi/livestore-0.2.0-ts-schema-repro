@@ -1,0 +1,30 @@
+{
+  "name": "subset-monorepo",
+  "version": "0.4.5",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SubsetLabs/subset-monorepo"
+  },
+  "scripts": {
+    "web": "pnpm -F web run dev"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "esbuild": "^0.23.1",
+    "prettier": "^3.2.5",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "marked": "^4.3.0"
+  }
+}
