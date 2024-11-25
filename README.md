@@ -48,4 +48,12 @@ The inferred type of 'file' cannot be named without a reference to '.pnpm/@lives
 
 
 
-- 
+- Using a useRow query `packages/livestore/src/queries.ts`
+
+
+
+```
+The inferred type of 'useClientState' cannot be named without a reference to '.pnpm/@livestore+db-schema@0.2.0_effect@3.10.12/node_modules/@livestore/db-schema/dist/ast/sqlite'. This is likely not portable. A type annotation is necessary.
+```
+
+Note: Not quite finished porting over useRow queries. 
